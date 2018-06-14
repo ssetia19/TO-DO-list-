@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login/Sign-up</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+</head>
+<body>
+<div class='logo' style="position: fixed; color: springgreen; bottom: 10px; right: 10px;  width: 210px; text-align:right;">
+    	AAA creAtions
+ 	 </div>
+<div id="login" align="center">
+	<h1 id="logo1">Login</h1>
+	<input type="text" oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white'; document.querySelector('#error').innerHTML = '';" name="" placeholder="Username" id="user1"/><br>
+	<input type="password" oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white'; document.querySelector('#error').innerHTML = '';" name="" placeholder="Password" id="key1"/><br>
+	<center><BUTTON id="loginbutton1"> LogIn</BUTTON></center><h4 id="error"><b>X</b> Invalid Username/Password</h4>
+	<!-- <BUTTON id="signupbutton1"> SignUp</BUTTON> -->
+	<p id="new">new user?</p><p id="signup1">
+	<a style='margin-left: 7px;' id="signup1" href="signup.html">signup</a></p><br>
+	<p id="forgot1">
+	<a style='margin-left: 7px;' id="forgot1"><u>Forgot Password?</u></a></p>
+</div>
+
+<!-- <div id="forgotkey1" align="center">
+	<h1 id="verify1">Verify</h1>
+	<h3 id="que1">question
+	</h3>
+	<input type="text" oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white'; document.querySelector('#error').innerHTML = '';" name="" placeholder="Answer" id="answer1"/><br>
+	<input type="password" oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white'; document.querySelector('#error').innerHTML = '';" name="" placeholder="New Password" id="fkey1"/><br>
+	<center><BUTTON id="confirm1">Verify</BUTTON></center><h4 id="error"><b>X</b> Answer didn't matched :( </h4>
+	<p id="log1">Remember Password?</p><p id="log1">
+	<a style='margin-left: 15px;' id="remember1" href="login.html">Login</a></p><br>
+</div> -->
+
+<div id="construct" align="center">
+	<img src="giphy.gif" alt="Smiley face" height = '100', width= '300'>
+	<h1 id="c1"; style="color: springgreen">FEATURE UNDER CONSTRUCTION ;)</h1>
+	<p>Refresh to Login</p>
+	
+</div>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCm5keLvD4IHidCyTrPZ_D7rQS6a6eceBM",
+    authDomain: "chathall-612be.firebaseapp.com",
+    databaseURL: "https://chathall-612be.firebaseio.com",
+    storageBucket: "chathall-612be.appspot.com",
+    messagingSenderId: "296707834901"
+    };
+    firebase.initializeApp(config);
+    // var userList = firebase.database().ref('/users/');
+    // var msgList = firebase.database().ref('/messages/');
+</script>
+<script type="text/javascript" src="login.js"></script>
+</body>
+</html>

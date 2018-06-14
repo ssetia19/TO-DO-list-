@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+	
+</head>
+<body>
+<div class='logo' style="position: fixed; color: springgreen; bottom: 10px; right: 10px;  width: 210px; text-align:right;">
+    	AAA creAtions
+ 	 </div>
+<div id="signup" align="center">
+	<h1 id="logo2">SignUp</h1>
+	<input type="text" oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white';document.querySelector('#error').innerHTML = ''; " name="" placeholder="Name" id="name2"/><br>
+	<input type="text" oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white';document.querySelector('#error').innerHTML = ''; " name="" placeholder="Username" id="user2"/><br>
+	<input type="password"  oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white';document.querySelector('#error').innerHTML = ''; " name="" placeholder="Password" id="key2"/><br>
+	<input type="text" oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white';document.querySelector('#error').innerHTML = ''; " name="" placeholder="Security question" id="que2"/><br>
+	<input type="text" oninput=" this.style.backgroundColor='white',this.style.borderColor = 'white';document.querySelector('#error').innerHTML = ''; " name="" placeholder="Answer" id="ans2"/><br>
+	<BUTTON id="signupbutton2"> SignUp</BUTTON><br><h4 id="error"><b>X</b> Invalid Username/Password</h4>
+	<!-- <BUTTON id="loginbutton2"> LogIn</BUTTON> -->
+
+	<p>already a user?</p><p id="login2">
+	<a style='margin-left: 7px;' id="login2" href="login.html">logIn</a></p>
+</div>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCm5keLvD4IHidCyTrPZ_D7rQS6a6eceBM",
+    authDomain: "chathall-612be.firebaseapp.com",
+    databaseURL: "https://chathall-612be.firebaseio.com",
+    storageBucket: "chathall-612be.appspot.com",
+    messagingSenderId: "296707834901"
+    };
+    firebase.initializeApp(config);
+    // var userList = firebase.database().ref('/users/');
+    // var msgList = firebase.database().ref('/messages/');
+</script>
+<script type="text/javascript" src="signup.js"></script>
+</body>
+</html>

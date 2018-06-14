@@ -1,0 +1,146 @@
+*{
+	font-family: cursive;
+	}
+	input{
+		outline: none;
+	}
+	/*#login{
+		display: none;
+	}*/
+	 #construct{
+	 	display: none;
+	 }
+#c1,#logo1, #verify1{
+	padding: 10px;
+	margin: 10px;
+	color: white;
+	animation: anim 1s 1;
+}
+#logo2{
+	padding: 10px;
+	margin: 10px;
+	color: white;
+	animation: anim 1s 1;
+}
+#user1,#answer1{
+	padding: 10px;
+	margin: 5px;
+	animation: anim 2s 1;
+	transition: all 1s;
+}
+#user2{
+	padding: 10px;
+	margin: 5px;
+	animation: anim 2.9s 1;
+	transition: all 1s;
+	
+
+}
+#key1, #fkey1{
+	padding: 10px;
+	margin: 5px;
+	animation: anim 2.5s 1;
+	transition: all 1s;
+	}
+	#key2{
+	padding: 10px;
+	margin: 5px;
+	animation: anim 3.3s 1;
+	transition: all 1s;
+	}
+#loginbutton1, #confirm1{
+	margin-top: 10px;
+	animation: anim 2.8s 1;
+	transition: all 1s;
+	
+
+}
+#signup1{
+color: springgreen;
+animation: ani 3.7s 1;
+transition: all 1s;
+}
+#signupbutton2{
+margin-top: 10px;
+animation: anim 4s 1;
+transition: all 1s;
+}
+#login2{
+color: springgreen;
+animation: ani 4s 1;
+transition: all 1s;
+}
+#name2{
+padding: 10px;
+	margin: 5px;
+	animation: anim 2.1s 1;
+	transition: all 1s;
+}
+#que1{
+	color: white;
+	animation: anim 3.6s 1;
+	transition: all 1s;
+}
+#que2{
+padding: 10px;
+	margin: 5px;
+	animation: anim 3.6s 1;
+	transition: all 1s;
+}
+#ans2{
+padding: 10px;
+	margin: 5px;
+	animation: anim 3.85s 1;
+	transition: all 1s;
+}
+body{
+	margin:150px;
+	background-color: black;
+}
+#error{
+	color: red;
+	display: none;
+	margin: 0px;
+	animation: anim 3.7s 1;
+}
+#forgot1, #remember1{
+	cursor: pointer;
+	color: springgreen;
+	animation: anim 3.7s 1;
+	transition: all 1s;
+	margin-top: 2px;
+}
+p{
+	color: white;
+	animation: anim 3.7s 1;
+	display: inline-block;
+	margin: 0px;
+	transition: all 1s;
+}
+@keyframes anim{
+	0%{transform : scale(0);}
+	40%{transform : scale(0);}
+	70%{transform: scale(1.4);}
+	100%{transform: scale(1);}
+}
+
+
+#answer1:hover,#user1:hover,#user2:hover,#user1:hover,#user2:hover,#fkey1:hover,#key1:hover,#key2:hover,#confirm1:hover,#loginbutton1:hover,#signup1:hover,
+#signupbutton2:hover,#login2:hover,#name2:hover,#que2:hover,#ans2:hover,#login2:hover,#signup1:hover,#forgot1:hover,#remember1:hover{
+	transform: scale(1.2);
+}
+
+@keyframes ani{
+	0%{
+		transform: translate3d(0px, 0px,0px) scale(0);
+		}
+	40%{
+		transform: translate3d(0px, 0px, 0px) scale(0);
+		}
+		70%{
+		transform: translate3d(40px, 0px, 0px) scale(1.4);
+		}
+		100%{
+		transform: translate3d(0px, 0px, 0px) scale(1);
+		}
+}

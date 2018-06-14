@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+	<title>
+		To-Do
+	</title>
+	<link rel="stylesheet" type="text/css" href="todo.css"/>
+</head>
+<body>
+	<div class="logout"> <button id="logout">Logout</button></div>
+	<div class='logo' style="position: fixed; color: springgreen; bottom: 10px; right: 10px;  width: 210px; text-align:right;">
+    	AAA creAtions
+ 	 </div>
+	<font color="WHITE"><center><h1>To-Do List</h1></center>
+	<center>
+	<div class="box">
+	<center>
+	<input type="text" id="textBox" placeholder="Your Text Goes Here" size="60" style="font-size:15pt;height:30px"/></center>
+	</div>
+	</center>
+	<div class="B">
+	<center>
+	<ol id="list"></ol>
+	</center>
+	</div>
+	<script> 
+	var config = {
+    apiKey: "AIzaSyCm5keLvD4IHidCyTrPZ_D7rQS6a6eceBM",
+    authDomain: "chathall-612be.firebaseapp.com",
+    databaseURL: "https://chathall-612be.firebaseio.com",
+    storageBucket: "chathall-612be.appspot.com",
+    messagingSenderId: "296707834901"
+    };
+    firebase.initializeApp(config);</script>
+	<script type="text/javascript" src='todo.js'></script>
+	<script type="text/javascript" src="logout.js"></script>
+</body>
+</html>
